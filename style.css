@@ -101,5 +101,7 @@ img {
 }
 
 .reference {
+  font-size:small;
   font-style: italic;
+  color:dimgrey;
 }
