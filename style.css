@@ -2,11 +2,11 @@
 /* CSS Document */
 
 body {
-  background-color: floralwhite;
+  background-color: rgb(255, 255, 255);
   font-weight: 300;
   font-size: 16px;
   font-family: 'Poppins', serif;
-  color: #649a6a;
+  color: #44834b;
   position: relative;
 
 }
@@ -104,4 +104,8 @@ img {
   font-size:small;
   font-style: italic;
   color:dimgrey;
+}
+
+table, th, td {
+  border:1px solid black;
 }
