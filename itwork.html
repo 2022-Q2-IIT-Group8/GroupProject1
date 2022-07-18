@@ -61,6 +61,73 @@
         </div>
     </nav>
     <div class="container">
+	<br>
+	<h1 align="center">IT Work</h1>
+	<p>The following is built from excerpts of an interview conducted by the group, who, thanks to his kind generosity, were able engage in discussion with a senior automation engineer currently employed at one of Australia’s Big Four banks.
+	The full transcript of this interview can be found <a href="Interview.pdf">Here</a>.</p>
+
+	<h2>In regards to the kind of work performed:</h2>
+	<p>“What exactly do I do? I am an automation engineer. I automate anything that needs automating. I work for the operation centre, so we look at all the systems throughout the bank, whenever something goes wrong we look at how to automate a system that will quickly fix it in the future, 
+		as well as different kinds of monitoring; 
+		we also do disaster monitoring, so looking at different kinds of natural disasters, looking at what sort of asset risks they have, “is it close to a branch?”, that kind of thing. It's a mixture, we are a small, agile team, able to jump on anything that needs jumping on.”<br>
+		“I have been doing a lot of infrastructure work for the team. All of our automation efforts require servers, so I have previously had some DevOps experience so I have enjoyed automating our infrastructure, throwing it on terraform.”<br>
+		“I’m working on automated infrastructure testing at the moment, so we can daily test our infrastructure code, spin up a stack, do some technical verification testing with it, and then just destroy it instantly.”
+	</p>
+	<h2>Interactions with other people</h2>
+	<h4>Inner-team:</h4>
+	<p>“So I've got a team, we've just had a new intern start the other day, there is him, we have three other engineers, myself included, and then the senior engineer on the team, and then we have our manager who we interact with daily, he is great and I'm so happy with the team in general.”<br>
+		“We all get on really well. I think that's a great culture at the bank, everyone gets along really well, and I can't overstate how much I enjoy working here because of that. I can't talk highly enough about this company, I'm loving it”<br>
+		“I’ve worked in teams that were a little bit larger, but I think it's really nice when the team really gets along, like a real good culture, sometimes you get someone on the team has a little less sociable in the workplace, they just want to “do their job, log off” kind of thing, 
+		but it's nice when everyone is really friendly, happy to go for a drink afterwards, you'd happily hang out with them outside the workplace.”
+	</p>
+	<h4>Organisation-scale interactions:</h4>
+	<p>“If I [need] something, [such as having] a firewall request put through, or I need some service account created, or a role provisions, then there's lots of teams, which are a good distance away from me, that I need to interact with, and if it's just a one off interaction, then it's generally pretty formal, 
+		and rigid, and they have an engagement process they want you to go through, and you're just going through a set of steps that are written down, it tends to be pretty inflexible, some of them will get a bit sick of it, it's gonna be pretty painful for them…”<br>
+		“But if you need to file a more than one request in the space of a couple months, and you start to recognise each other's names, and then, sometimes you take it outside the request process, you start messaging each other, you manage to build up a bit of rapport with them and then the whole process becomes just a bit less rigid.
+		…To have that contact in mind, to be able to go “ah, I know who can help with this”, like if I'm wondering if the firewall is working this specific way, or “what's this environmental difference”, instead of filing a request that sits in a queue that I'll get back two weeks later; to be able to just reach out to them… 
+		but I think that's like a scale thing, with smaller companies, I'm sure you've got that more intimate relationship with everyone, comes a bit more naturally, but anyway.”
+	</p>
+	<h3>When asked how most of their time is spent, they answered plainly:</h3>
+	<h2>“Debugging.”</h2>
+	<h3>When asked if they wished to elaborate further, they simply answered</h3>
+	<h1>“No.”</h1>
+	<h2>Thankfully, this was in jest, and they continued with an explanation:</h2>
+	<p>“When I'm building some sort of greenfield tech,… something from scratch, which I really enjoy, coming up with a big picture isn’t too hard, “this is the system, this is what it should look like”, and then you just go and write it all, and then it's all built, building it isn't exactly the hard part, 
+		ironing it all out gets harder when you're doing all of your testing, you turn on the server, one morning, some sort of patch has gone through, all these little changes, causes some issue, and fixing it, all these little bugs, working out all these different scenarios…”<br>
+		“I think building the initial thing isn't the hard part, but reinforcing it, getting it production ready and working through bugs, that's most of my day.”
+	</p>
+
+	<h2>When asked about the most challenges aspects of their work:</h2>
+	<p>
+		“I guess the security is one part of things, building everything to security requirements, sometimes it's understandable, but it’s frustrating, the kind of workarounds you have to do to hit some requirement… Some of the requirements you can see why they're there, but they're just not practical.”<br>
+		“Sometimes, there's like a really good way of doing things, but security is not happy.”<br>
+		“It's like 99% of the time you feel like you could've [completed a project] so much earlier, [if it were not for] adding in all this extra stuff in for security requirements, but you get why they’re there, a lot of them are very logical, and then some of them are like ‘come on man, I get where you're coming from, but, 
+		you know, you're not living in reality, here.’”<br>
+		“Well, it's more like "We need this software to do this”, "Well, it was not written to do that.””<br>
+	</p>
+	<h2>They proceeded to provide an example of something they considered “extenuating circumstances”, wherein they thought it may be reasonable to make exceptions to the security policies:</h2>
+	<p>
+		“One such example was when dealing with public data. For instance, dealing with [bank] branch locations.”<br>
+		 “You wouldn't exactly think public data needs to be secured all that much? We still have to jump through all of these hoops to protect the security and privacy of data that is available on our website for the entire world to see.”<br>
+		“If you ever thought it was difficult to find the opening hours of your local branch on our website, if you want to access that information from the inside, you need two engineers on opposite sides of the building, to turn a pair of keys simultaneously, 
+		while both entering a cryptographically signed passcode from the president of the United States into a teletype while blindfold”<br>
+	</p>
+	<h2>When asked for their view of the current state of, and near future of the industry:</h2>
+	<p>
+		“Alright, I guess this infrastructure testing thing that I'm working on at the moment is a pretty good snapshot of where we are”<br>
+		“Now that we're on the cloud, we can do things we never could, spin up a server for an hour, run a set of tests on it, and then kill it, I guess that is really “wow, we are really far advanced, this is some really cool stuff”, and then, on the other hand, I'm using shell scripts to do the testing, you know?”<br>
+		“We’re at the point where we've got this very cool technology, but it's not like so mature that you're doing it all in YAML. I feel like the fact that I've written half of it in YAML, and the other half in shell script, is a good signifier of where we are, of where the IT industry is. 
+		We are shifting into this whole codeless, defined state, kind of system, we're moving away from taping things together with code, we are moving towards a more lockdown paradigm for just achieving a single task."<br>
+		“Terraform is not something you fizzbuzz in, it is something you define a state in, but I feel like we're not all the way there. We could do lower-level infrastructure testing, like to test if a whole system is up and running, [right now] that still happening in a shell script. 
+		I feel like we're in a transition period, that sort of captures the state of where we are.”<br>
+		“The half that's in the future is the YAML, and the spinning up infrastructure, and the half that's in the past is the shell script I'm using. The future is that it’s all in the YAML”<br>
+	</p>
+	<h2>When asked if they believed the next major systems paradigm would be an evolution of current technology, or a total reimagining, they offered this to close out the interview:</h2>
+	<p>
+		“You know, I don't think my understanding of software principles are sufficiently mature enough to make a proper prediction on that; I feel like what we do restricts, but in a good way, I think things are going to get a lot more siloed, and those are going to enable things like self-healing, [things] you get … with defining state. 
+		If we try putting it into a state, and that doesn't happen, then there are ways to handle that sort of [error]. That's what these paradigms are going to bring and enforce. That's why I think that'll be the future, instead of just “you write a script to achieve an outcome, it deflagrates, ok what now?”
+	</p>
+
     </div><br><br><br>
 
 <footer class="footer">
