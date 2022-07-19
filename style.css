@@ -107,5 +107,7 @@ img {
 }
 
 table, th, td {
-  border:1px solid black;
+  border:3px solid rgb(250, 254, 247);
+  align:center;
+  background-color: rgb(243, 236, 236);
 }
